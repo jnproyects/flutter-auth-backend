@@ -15,8 +15,8 @@ const validateGoogleIdToken = async ( token ) => {
         });
         const payload = ticket.getPayload();
         
-        console.log('========PAYLOAD========');
-        console.log( payload );
+        // console.log('========PAYLOAD========');
+        // console.log( payload );
     
         return {
             name: payload['name'],
@@ -28,8 +28,6 @@ const validateGoogleIdToken = async ( token ) => {
         return null;
     }
 }
-
-// verify().catch(console.error);
 
 module.exports = {
     validateGoogleIdToken
